@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+
 # DROP TABLES
 
 songplay_table_drop = "DROP TABLE IF EXISTS songplays"
@@ -9,53 +13,53 @@ time_table_drop = "DROP TABLE IF EXISTS time"
 # CREATE TABLES
 
 songplay_table_create = ("""CREATE TABLE IF NOT EXISTS songplays (
-    songplay_id serial PRIMARY KEY,
-    start_time bigint NOT NULL,
-    user_id int NOT NULL,
-    level varchar,
-    song_id varchar,
-    artist_id varchar,
-    session_id varchar,
-    location varchar,
-    user_agent varchar
+    songplay_id SERIAL PRIMARY KEY,
+    start_time BIGINTEGER NOT NULL,
+    user_id INTEGER NOT NULL,
+    level VARCHAR,
+    song_id VARCHAR,
+    artist_id VARCHAR,
+    session_id VARCHAR,
+    location VARCHAR,
+    user_agent VARCHAR
     );
 """)
 
 user_table_create = ("""CREATE TABLE IF NOT EXISTS users (
-    user_id int PRIMARY KEY,
-    first_name varchar,
-    last_name varchar,
-    gender varchar,
-    level varchar
+    user_id INTEGER PRIMARY KEY,
+    first_name VARCHAR,
+    last_name VARCHAR,
+    gender VARCHAR,
+    level VARCHAR
     );
 """)
 
 song_table_create = ("""CREATE TABLE IF NOT EXISTS songs (
-    song_id varchar PRIMARY KEY,
-    title varchar,
-    artist_id varchar,
-    year int,
-    duration numeric
+    song_id VARCHAR PRIMARY KEY,
+    title VARCHAR,
+    artist_id VARCHAR,
+    year INTEGER,
+    duration NUMERIC
     );
 """)
 
 artist_table_create = ("""CREATE TABLE IF NOT EXISTS artists (
-    artist_id varchar PRIMARY KEY,
-    name varchar,
-    location varchar,
-    latitude numeric,
-    longitude numeric
+    artist_id VARCHAR PRIMARY KEY,
+    name VARCHAR,
+    location VARCHAR,
+    latitude NUMERIC,
+    longitude NUMERIC
     );    
 """)
 
 time_table_create = ("""CREATE TABLE IF NOT EXISTS time (
-    start_time bigint PRIMARY KEY,
-    hour int,
-    day int,
-    week int,
-    month int,
-    year int,
-    weekday int
+    start_time BIGINTEGER PRIMARY KEY,
+    hour INTEGER,
+    day INTEGER,
+    week INTEGER,
+    month INTEGER,
+    year INTEGER,
+    weekday INTEGER
     );    
 """)
 

@@ -39,7 +39,7 @@ sparkify-postgres
 
 ### How to run
 Clone this project, and to up and running it **locally** you can use Docker, because in its repository/hub there is an 
-image with Postgres installed and the Sparkify raw data to be explored 
+image with Postgres installed, database authentication, and the Sparkify raw data to be manipulated 
 (image ref: **postgres-student-image**, thanks to user *onekenken*). For the sake of this project the data and 
 metadata under munging is part of the Million Song Dataset<sup>1</sup>.
 

@@ -1,5 +1,3 @@
-![Logo](https://github.com/abreufreire/sparkify-postgres/blob/master/graphics/logo.png)
-
 # Data Modeling with PostgreSQL
 ### Project overview
 A fictional startup **Sparkify** in the music streaming industry looks to provide a great service to the community that 
@@ -11,19 +9,22 @@ For this job we have adopted Postgres as the database platform, built a data mod
 fact tables), and built an ETL pipeline to extract-transform-load data from the local files to a **sparkifydb** (Postgres) 
 database.
 
+![Logo](https://github.com/abreufreire/sparkify-postgres/blob/master/graphics/logo.png)
 
 ### Project files
 ```
 sparkify-postgres
-|  README.md                    # Project description
+|  .gitignore                   # Config file for Git
+|  README.md                    # Repository description
 |  analytics.ipynb              # Sample queries to run on sparkifydb
 |  create_tables.py             # Creates sparkifydb tables (drops content if exists)
 |  etl.py                       # Runs ETL pipeline to process data
+|  requirements.txt             # Contains libraries needed to run scripts
 |  sql_queries.py               # Queries to build sparkifydb tables
 |  test_etl.ipynb               # Tests pipeline operations
 |  test_sql_queries.ipynb       # Tests queries on sparkifydb
 |  transaction_postgres.py      # Defines connection & methods to sparkifydb
-|  requirements.txt             # Contains libraries needed to run scripts
+
 |
 └--graphics
   |  docker_hub.png             # Postgres image reference in Docker Hub
